@@ -18,27 +18,27 @@ div {
   border: 1px solid black;
   float: left;
 }
-.grid-6 {
+.grid-1 {
   width: 16.4%;
 }
 
-.grid-5 {
-  width: 19.74%;
-}
-
-.grid-4 {
-  width: 24.73%;
+.grid-2 {
+  width: 33%;
 }
 
 .grid-3 {
-  width: 33.05%;
-}
-
-.grid-2 {
   width: 49.7%;
 }
 
-.grid-1 {
+.grid-4 {
+  width: 66.4%;
+}
+
+.grid-5 {
+  width: 83.02%;
+}
+
+.grid-6 {
   width: 99.7%;
 }
 
