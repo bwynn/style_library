@@ -5,18 +5,19 @@ body {
   margin: 0;
 }
 
-div {
+.row {
   display: block;
   min-height: 50px;
 }
 
 /* --------------------- Grid -------------------- */
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
+.grid {
   box-sizing: border-box;
   margin: .9em .13%;
   padding: .2em;
   border: 1px solid black;
   float: left;
+  height: 100%;
 }
 .grid-1 {
   width: 16.4%;
