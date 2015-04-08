@@ -1,8 +1,26 @@
+/*                       Details
+Thank you for checking out this style library. Of note:
+1. I am using Google fonts 'Roboto Condensed' for the page,
+which requires a link element in the head of the html doc.
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+Copy and paste the link tag above into the html document
+above the link to this stylesheet. */
+
 /* --------------------- Global ------------------ */
 html,
 body {
   width: 100%;
   margin: 0;
+}
+
+body {
+  background: #F0F4FA;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* add font-weight properties of 300, 700, 700 italic for other font variants*/
+}
+
+a {
+  text-decoration: none;
 }
 
 .row {
@@ -60,10 +78,19 @@ body {
 /* --------------------- Table ------------------- */
 /* --------------------- Buttons ----------------- */
 .btn {
-  height: 60px;
-  width: 100px;
-  border: 1px solid red;
-  border-radius: 2px;
+  padding: 1em 2em;
+  border: 1px solid #C1C5C9;
+  background: #505254;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #F0F4FA;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #C1C5C9;
+  color: #505254;
+  border: 1px solid #505254;
 }
 
 /* --------------------- Forms ------------------- */
