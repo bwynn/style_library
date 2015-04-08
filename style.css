@@ -10,37 +10,45 @@ body {
   min-height: 50px;
 }
 
+.section {
+  width: 100%;
+  clear: both;
+  height: 100px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: .9em 0;
+}
+
 /* --------------------- Grid -------------------- */
 .grid {
   box-sizing: border-box;
-  margin: .9em .13%;
   padding: .2em;
   border: 1px solid black;
   float: left;
   height: 100%;
 }
 .grid-1 {
-  width: 16.4%;
+  width: 16.66%;
 }
 
 .grid-2 {
-  width: 33%;
+  width: 33.33%;
 }
 
 .grid-3 {
-  width: 49.7%;
+  width: 49.99%;
 }
 
 .grid-4 {
-  width: 66.4%;
+  width: 66.6%;
 }
 
 .grid-5 {
-  width: 83.02%;
+  width: 83.33%;
 }
 
 .grid-6 {
-  width: 99.7%;
+  width: 100%;
 }
 
 /* --------------------- Table ------------------- */
