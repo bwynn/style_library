@@ -67,7 +67,8 @@ a {
 }
 
 ul {
-  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
 }
 
 .center {
@@ -191,30 +192,44 @@ ul {
 }
 .btn,
 .btn-sm {
-  border: 1px solid #C1C5C9;
-  background: #505254;
+  border: 1px solid #505254;
+  background: -webkit-linear-gradient(0deg,#505254, #999);
+  background: -moz-linear-gradient(00deg,#505254, #999);
+  background: linear-gradient(0deg,#505254, #999);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   box-sizing: border-box;
   color: #F0F4FA;
   display: inline-block;
-  -webkit-transition: background 0.2 ease;
-  -moz-transition: background 0.2 ease;
-  transition: background 0.2s ease;
 }
 
 .btn:hover,
 .btn-sm:hover {
-  background-color: #C1C5C9;
-  color: #505254;
-  border: 1px solid #505254;
+  background: -webkit-linear-gradient(0deg,#555, #888);
+  background: -moz-linear-gradient(0deg,#555, #888);
+  background: linear-gradient(0deg,#555, #888);
+  border: 1px solid #333;
   text-decoration: underline;
 }
 
 .btn-sm {
   padding: .2em .5em;
   font-size: .6em;
+}
+
+.btn-stop {
+  background: -webkit-linear-gradient(0deg, #BF483F, #E8594C);
+  background: -moz-linear-gradient(0deg, #BF483F, #E8594C);
+  background: linear-gradient(0deg, #BF483F, #E8594C);
+  border: 1px solid #822F29;
+}
+
+.btn-stop:hover {
+  background: -webkit-linear-gradient(0deg, #822F29, #A64036);
+  background: -moz-linear-gradient(0deg, #822F29, #A64036);
+  background: linear-gradient(0deg, #822F29, #A64036);
+  border: 1px solid #822F29;
 }
 
 /* --------------------- Forms ------------------- */
