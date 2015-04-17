@@ -71,6 +71,10 @@ ul {
 }
 
 .center {
+  text-align: center;
+}
+
+.center-block {
   margin: 0 auto;
 }
 
@@ -183,6 +187,7 @@ ul {
 /* --------------------- Buttons ----------------- */
 .btn {
   padding: .35em 1em;
+  font-size: .9em;
 }
 .btn,
 .btn-sm {
