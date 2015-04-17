@@ -2,7 +2,7 @@
 Thank you for checking out this style library. Of note:
 1. I am using Google fonts 'Roboto Condensed' for the page,
 which requires a link element in the head of the html doc.
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 Copy and paste the link tag above into the html document
 above the link to this stylesheet. */
 
@@ -16,9 +16,12 @@ body {
 body {
   background: #F0F4FA;
   font-family: 'Noto Sans', sans-serif;
-  /*font-family: 'Roboto Condensed', sans-serif;*/
-  /* add font-weight properties of 300, 700, 700 italic for other font variants*/
+  /* add font-weight properties of 400, 700, 400italic for other font variants*/
   font-size: 26px;
+}
+
+header, section, aside, footer {
+  display: block;
 }
 
 h1,
@@ -63,6 +66,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  text-decoration: none;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -96,6 +103,56 @@ a {
   float: right;
 }
 
+.sm-grid-1 {
+  width: 16.66%;
+}
+
+.sm-grid-2 {
+  width: 33.33%;
+}
+
+.sm-grid-3 {
+  width: 49.99%;
+}
+
+.sm-grid-4 {
+  width: 66.6%;
+}
+
+.sm-grid-5 {
+  width: 83.33%;
+}
+
+.sm-grid-6 {
+  width: 100%;
+}
+
+@media screen and (min-width: 470px) {
+  .md-grid-1 {
+    width: 16.66%;
+  }
+
+  .md-grid-2 {
+    width: 33.33%;
+  }
+
+  .md-grid-3 {
+    width: 49.99%;
+  }
+
+  .md-grid-4 {
+    width: 66.6%;
+  }
+
+  .md-grid-5 {
+    width: 83.33%;
+  }
+
+  .md-grid-6 {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .lg-grid-1 {
     width: 16.66%;
@@ -122,65 +179,18 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .md-grid-1 {
-    width: 16.66%;
-  }
-
-  .md-grid-2 {
-    width: 33.33%;
-  }
-
-  .md-grid-3 {
-    width: 49.99%;
-  }
-
-  .md-grid-4 {
-    width: 66.6%;
-  }
-
-  .md-grid-5 {
-    width: 83.33%;
-  }
-
-  .md-grid-6 {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .sm-grid-1 {
-    width: 16.66%;
-  }
-
-  .sm-grid-2 {
-    width: 33.33%;
-  }
-
-  .sm-grid-3 {
-    width: 49.99%;
-  }
-
-  .sm-grid-4 {
-    width: 66.6%;
-  }
-
-  .sm-grid-5 {
-    width: 83.33%;
-  }
-
-  .sm-grid-6 {
-    width: 100%;
-  }
-}
-
 /* --------------------- Table ------------------- */
 /* --------------------- Buttons ----------------- */
 .btn {
-  padding: 1em 2em;
+  padding: .35em 1em;
+}
+.btn,
+.btn-sm {
   border: 1px solid #C1C5C9;
   background: #505254;
-  border-radius: 6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   box-sizing: border-box;
   color: #F0F4FA;
   display: inline-block;
@@ -189,11 +199,17 @@ a {
   transition: background 0.2s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-sm:hover {
   background-color: #C1C5C9;
   color: #505254;
   border: 1px solid #505254;
   text-decoration: underline;
+}
+
+.btn-sm {
+  padding: .2em .5em;
+  font-size: .6em;
 }
 
 /* --------------------- Forms ------------------- */
