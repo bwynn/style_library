@@ -185,7 +185,36 @@ ul {
 }
 
 /* --------------------- Table ------------------- */
+table {
+  border: 1px solid #111;
+  border-spacing: 0;
+  font-size: .8em;
+}
 
+td {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tr {
+  background-color: #fafafa;
+}
+
+tr:nth-child(even) {
+  background: #f0f0f0;
+}
+
+td {
+  padding: 0 10px;
+}
+
+.row > table {
+  margin: 0 auto;
+}
 /* --------------------- Buttons ----------------- */
 .btn {
   padding: .35em 1em;
@@ -194,9 +223,7 @@ ul {
 .btn,
 .btn-sm {
   border: 1px solid #505254;
-  background: -webkit-linear-gradient(0deg,#505254, #999);
-  background: -moz-linear-gradient(00deg,#505254, #999);
-  background: linear-gradient(0deg,#505254, #999);
+  background: #333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -207,9 +234,7 @@ ul {
 
 .btn:hover,
 .btn-sm:hover {
-  background: -webkit-linear-gradient(0deg,#555, #888);
-  background: -moz-linear-gradient(0deg,#555, #888);
-  background: linear-gradient(0deg,#555, #888);
+
   border: 1px solid #333;
   text-decoration: underline;
 }
@@ -220,16 +245,12 @@ ul {
 }
 
 .btn-stop {
-  background: -webkit-linear-gradient(0deg, #BF483F, #E8594C);
-  background: -moz-linear-gradient(0deg, #BF483F, #E8594C);
-  background: linear-gradient(0deg, #BF483F, #E8594C);
+
   border: 1px solid #822F29;
 }
 
 .btn-stop:hover {
-  background: -webkit-linear-gradient(0deg, #822F29, #A64036);
-  background: -moz-linear-gradient(0deg, #822F29, #A64036);
-  background: linear-gradient(0deg, #822F29, #A64036);
+
   border: 1px solid #822F29;
 }
 
