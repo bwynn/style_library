@@ -14,13 +14,13 @@ body {
 }
 
 body {
-  background: #F0F4FA;
+  background: #EDEDF5;
   font-family: 'Noto Sans', sans-serif;
   /* add font-weight properties of 400, 700, 400italic for other font variants*/
-  font-size: 26px;
+  font-size: 24px;
 }
 
-header, section, aside, footer {
+header, section, aside, footer, .grid {
   display: block;
 }
 
@@ -55,6 +55,10 @@ h5 {
 
 h6 {
   font-size: 1.1em;
+}
+
+li {
+  font-size: .8em;
 }
 
 p {
@@ -95,7 +99,6 @@ ul {
   border: 1px solid black;
   float: left;
   height: 100%;
-  display: block;
   min-height: 50px;
   background-color: #333;
 }
