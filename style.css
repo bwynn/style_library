@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background: #EDEDF5;
+  background: #F7F7FF;
   font-family: 'Noto Sans', sans-serif;
   /* add font-weight properties of 400, 700, 400italic for other font variants*/
   font-size: 24px;
@@ -87,7 +87,7 @@ ul {
   width: 100%;
   clear: both;
   min-height: 100px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   box-sizing: border-box;
   margin: .9em 0;
 }
@@ -189,14 +189,8 @@ ul {
 
 /* --------------------- Table ------------------- */
 table {
-  border: 1px solid #111;
   border-spacing: 0;
   font-size: .8em;
-}
-
-td {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
 }
 
 td:last-child {
@@ -248,7 +242,7 @@ td {
 }
 
 .btn-stop {
-
+  background-color: #BF483F;
   border: 1px solid #822F29;
 }
 
